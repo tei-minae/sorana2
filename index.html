@@ -18,9 +18,12 @@
     </style>
 </head>
 <body>
-    <video width="800" height="450" autoplay muted>
+    <video id="videoPlayer" width="800" height="450" controls playsinline>
         <source src="movie/そらなママのおはロック.mp4" type="video/mp4">
         お使いのブラウザはvideoタグをサポートしていません。
     </video>
+    <script>
+        document.getElementById('videoPlayer').play();
+    </script>
 </body>
 </html>
